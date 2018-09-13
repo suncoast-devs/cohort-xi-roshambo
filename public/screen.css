@@ -1,0 +1,97 @@
+/* @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy'); */
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'),
+    url(https://fonts.gstatic.com/s/luckiestguy/v8/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf)
+      format('truetype');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font: 16px / 1 sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+ul,
+ol,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(0, 223, 129);
+  padding: 1.5rem 3rem;
+  text-align: center;
+  font-size: 8vw;
+  font-style: italic;
+  color: ;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  margin: 1rem;
+  padding: 1rem;
+  border: 3px dashed rgba(58, 209, 109, 0.56);
+}
+
+section p {
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.rock {
+  width: calc(200px / 3);
+  height: calc(300px / 3);
+  background-size: contain;
+  background-image: url(/images/rock.jpg);
+  color: transparent;
+}
+
+.paper {
+  width: calc(225px / 3);
+  height: calc(300px / 3);
+  background-size: contain;
+  background-image: url(/images/paper.jpg);
+  color: transparent;
+}
+
+.scissors {
+  width: calc(225px / 3);
+  height: calc(300px / 3);
+  background-size: contain;
+  background-image: url(/images/scissors.jpg);
+  color: transparent;
+}
+
+.choice-made button {
+  display: none;
+}
+
+.player-1 .choice {
+  display: none;
+}
+
+.player-1.choice-made .choice {
+  display: block;
+}
